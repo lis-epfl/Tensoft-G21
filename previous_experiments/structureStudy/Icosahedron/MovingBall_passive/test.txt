@@ -1,0 +1,19 @@
+
+test tronc commun
+
+order: 1 connectedModules: 2 3 connectedFaces: 2 3 freq: 2 amplitude: 1 phase: 0
+order: 2 connectedModules: 0 connectedFaces: 0 freq: 2 amplitude: 1 phase: 0
+order: 3 connectedModules: 0 connectedFaces: 0 freq: 2 amplitude: 1 phase: 0
+
+test ligne
+
+order: 1 connectedModules: 2 connectedFaces: 2 freq: 2 amplitude: 1 phase: 0
+order: 2 connectedModules: 3 connectedFaces: 2 freq: 2 amplitude: 1 phase: 0
+order: 3 connectedModules: 4 connectedFaces: 2 freq: 2 amplitude: 1 phase: 0
+order: 4 connectedModules: 0 connectedFaces: 0 freq: 2 amplitude: 1 phase: 0
+
+test spiral
+
+order: 1 connectedModules: 2 connectedFaces: 1 freq: 2 amplitude: 1 phase: 0
+order: 2 connectedModules: 3 connectedFaces: 2 freq: 2 amplitude: 1 phase: 0
+order: 3 connectedModules: 0 connectedFaces: 0 freq: 2 amplitude: 1 phase: 0

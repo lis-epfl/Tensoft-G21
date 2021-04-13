@@ -1,0 +1,49 @@
+{
+    "direction_path": "/data/zambrano/tensoft/simulation/apps/robotDirection",
+    "simulation_path": "/data/zambrano/tensoft/simulation/apps/robotSimulationGR",
+    "tracker_path": "/data/zambrano/tensoft/simulation/apps/robotTrajectory",
+    "visualization_path": "/data/zambrano/tensoft/simulation/apps/robotVisualizationGR",
+    "result_dir": "/data/zambrano/tensoft/ea_sim/results/coev/gr/vie_exp_48_high_dist_frict_1_gr_elit_lw_th_0_dens_0",
+    "algorithm": {
+        "name": "vie",
+        "pop_size": 48,
+        "num_mutants": 48,
+        "conv_rate": 0.1,
+        "time_no_update": 50000
+    },
+    "robot": {
+        "num_faces": 8,
+        "max_num_modules": 10,
+        "mutation_config": {
+            "p_global_mut": 0.3,
+            "p_local_mut": 0.6,
+            "weights": {
+                "global": [1, 1, 1],
+                "local": [1, 1]
+            }
+        },
+        "modules_conf": {
+            "range_freq": [0.25, 0.5],
+            "range_amp": [0.6],
+            "range_phase": [0, 1.57, 3.14, 4.71],
+            "stiff_table": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+        },
+        "robot_tests": 2,
+        "per_module_stiffness": false
+    },
+    "seeds": [27],
+    "max_num_sims": 15000,
+    "target_dist_bearing": [
+        [45, -1.57],
+        [45, -0.78],
+        [45, 0.78],
+        [45, 1.57]
+    ],
+    "verbose": true,
+    "eval_all": false,
+    "hof_size": 100,
+    "checkpoint_freq": 5,
+    "noise_type": 1,
+    "noise_level": 0.035,
+    "sim_time": 40
+}

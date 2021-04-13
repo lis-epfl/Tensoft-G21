@@ -1,0 +1,23 @@
+# dev folders
+.git
+.idea
+
+# files and folders not necessary for the image
+results
+previous_experiments
+other
+LICENSE
+README.md
+.gitignore
+.gitmodules
+
+ea_sim/__pycache__
+
+simulation/.idea
+simulation/.gitignore
+simulation/build
+simulation/cmake-build-debug
+simulation/com_measures
+simulation/fitness_dist
+simulation/nn_commands
+simulation/trajectories

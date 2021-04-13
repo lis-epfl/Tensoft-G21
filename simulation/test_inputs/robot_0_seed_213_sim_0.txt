@@ -1,0 +1,6 @@
+order: 1 connectedModules: 2 connectedFaces: 1 freq: 0.5 amplitude: 0.6 phase: 1.57 rot: 0 stiff: 0.5
+order: 2 connectedModules: 3 connectedFaces: 1 freq: 0.5 amplitude: 0.6 phase: 3.14 rot: 1 stiff: 0.5
+order: 3 connectedModules: 4 connectedFaces: 1 freq: 0.5 amplitude: 0.6 phase: 3.14 rot: 3 stiff: 0.5
+order: 4 connectedModules: 5 connectedFaces: 1 freq: 0.5 amplitude: 0.6 phase: 3.14 rot: 1 stiff: 0.5
+order: 5 connectedModules: 0 connectedFaces: 0 freq: 0.5 amplitude: 0.6 phase: 1.57 rot: 3 stiff: 0.5
+fitness: 34.417

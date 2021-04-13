@@ -1,0 +1,54 @@
+{
+    "direction_path": "/home/tensoft/simulation/apps/robotDirection",
+    "simulation_path": "/home/tensoft/simulation/apps/robotSimulationGR",
+    "tracker_path": "/home/tensoft/simulation/apps/robotTrajectory",
+    "result_dir": "/home/tensoft/results/neat/gr/robot_100",
+    "robot": {
+        "id": 100,
+        "num_faces": 8,
+        "num_modules": 3,
+        "modules_conf": [
+            {
+                "order": 1,
+                "connectedModules": 2,
+                "connectedFaces": 3,
+                "freq": 0.5,
+                "amplitude": 0.6,
+                "phase": 4.71,
+                "rot": 0,
+                "stiff": 0.5
+            },
+            {
+                "order": 2,
+                "connectedModules": 3,
+                "connectedFaces": 5,
+                "freq": 0.5,
+                "amplitude": 0.6,
+                "phase": 3.14,
+                "rot": 0,
+                "stiff": 0.5
+            },
+            {
+                "order": 3,
+                "connectedModules": 0,
+                "connectedFaces": 3,
+                "freq": 0.5,
+                "amplitude": 0.6,
+                "phase": 1.57,
+                "rot": 0,
+                "stiff": 0.5
+            }
+        ],
+        "robot_tests": 2
+    },
+    "target_dist_bearing": [
+        [45, -0.78],
+        [45, 0.78]
+    ],
+    "seeds": [213],
+    "max_num_sims": 56,
+    "checkpoint_freq": 5,
+    "noise_type": 1,
+    "noise_level": 0.035,
+    "sim_time": 40
+}

@@ -1,0 +1,66 @@
+{
+    "direction_path": "/data/zambrano/tensoft/simulation/apps/robotDirection",
+    "simulation_path": "/data/zambrano/tensoft/simulation/apps/robotSimulationGR",
+    "tracker_path": "/data/zambrano/tensoft/simulation/apps/robotTrajectory",
+    "result_dir": "/data/zambrano/tensoft/ea_sim/results/neat/gr/robot_2_0",
+    "robot": {
+        "id": 2,
+        "num_faces": 8,
+        "num_modules": 4,
+        "modules_conf": [
+            {
+                "order": 1,
+                "connectedModules": 2,
+                "connectedFaces": 4,
+                "freq": 0.5,
+                "amplitude": 0.6,
+                "phase": 0,
+                "rot": 0,
+                "stiff": 0.2
+            },
+            {
+                "order": 2,
+                "connectedModules": 3,
+                "connectedFaces": 1,
+                "freq": 0.25,
+                "amplitude": 0.6,
+                "phase": 1.57,
+                "rot": 0,
+                "stiff": 0.2
+            },
+            {
+                "order": 3,
+                "connectedModules": 4,
+                "connectedFaces": 5,
+                "freq": 0.5,
+                "amplitude": 0.6,
+                "phase": 1.57,
+                "rot": 0,
+                "stiff": 0.2
+            },
+            {
+                "order": 4,
+                "connectedModules": 0,
+                "connectedFaces": 1,
+                "freq": 0.5,
+                "amplitude": 0.6,
+                "phase": 0,
+                "rot": 0,
+                "stiff": 0.2
+            }
+        ],
+        "robot_tests": 2
+    },
+    "target_dist_bearing": [
+        [45, -1.57],
+        [45, -0.78],
+        [45, 0.78],
+        [45, 1.57]
+    ],
+    "seeds": [27],
+    "max_num_sims": 15000,
+    "checkpoint_freq": 5,
+    "noise_type": 1,
+    "noise_level": 0.035,
+    "sim_time": 40
+}

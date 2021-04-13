@@ -1,0 +1,20 @@
+{
+    "direction_path": "/home/tensoft/simulation/apps/robotDirection",
+    "simulation_path": "/home/tensoft/simulation/apps/robotSimulationGR",
+    "tracker_path": "/home/tensoft/simulation/apps/robotTrajectory",
+    "result_dir": "/home/tensoft/results/neat/gr/robot",
+    "robot": {
+        "id": 0,
+        "num_faces": 8,
+        "num_modules": 0,
+        "modules_conf": [],
+        "robot_tests": 2
+    },
+    "target_dist_bearing": [],
+    "seeds": [],
+    "max_num_sims": 0,
+    "checkpoint_freq": 5,
+    "noise_type": 1,
+    "noise_level": 0.035,
+    "sim_time": 40
+}

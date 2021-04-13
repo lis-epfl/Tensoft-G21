@@ -1,0 +1,5 @@
+[submodule "external/ntrt"]
+	path = external/ntrt
+	url = ../../ZarHenry96/NTRTsim.git
+	branch = library-review
+	ignore = dirty

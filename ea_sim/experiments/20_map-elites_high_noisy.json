@@ -1,0 +1,40 @@
+{
+    "simulation_path": "/home/tensoft/simulation/apps/robotSimulation",
+    "tracker_path": "/home/tensoft/simulation/apps/robotTrajectory",
+    "result_dir": "/home/tensoft/results/20_map-elites_high_noisy",
+    "algorithm": {
+        "name": "map-elites",
+        "num_init_sols": 1080,
+        "batch_size": 24
+    },
+    "robot": {
+        "num_faces": 8,
+        "max_num_modules": 10,
+        "mutation_config": {
+            "p_global_mut": 0.3,
+            "p_local_mut": 0.6,
+            "weights": {
+                "global": [1, 1, 1],
+                "local": [1, 1]
+            }
+        },
+        "modules_conf": {
+            "range_freq": [0.25, 0.5],
+            "range_amp": [0.6],
+            "range_phase": [0, 1.57, 3.14, 4.71],
+            "stiff_table": [1]
+        },
+        "robot_tests": 1,
+        "per_module_stiffness": false,
+        "sim_seed": 42
+    },
+    "seeds": [213, 7240, 450, 748932, 21, 3478910, 564848, 46412, 48941561, 97315],
+    "max_num_sims": 38400,
+    "num_sim": 5,
+    "verbose": true,
+    "checkpoint_freq": 5,
+    "noise_type": 1,
+    "noise_level": 0.035,
+    "history_file": "/home/tensoft/ea_sim/experiments/history_noisy.csv",
+    "use_curiosity": false
+}

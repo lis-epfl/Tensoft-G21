@@ -1,0 +1,8 @@
+apps
+build
+cmake-build-debug
+trajectories
+nn_commands
+test_inputs/single_mods
+fitness_dist
+com_measures

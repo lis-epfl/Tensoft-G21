@@ -1,0 +1,52 @@
+{
+    "direction_path": "/data/zambrano/tensoft/simulation/apps/robotDirection",
+    "simulation_path": "/data/zambrano/tensoft/simulation/apps/robotSimulationGRLog",
+    "tracker_path": "/data/zambrano/tensoft/simulation/apps/robotTrajectory",
+    "visualization_path": "/data/zambrano/tensoft/simulation/apps/robotVisualizationGR",
+    "result_dir": "/data/zambrano/tensoft/ea_sim/results/double_map/gr/map_elites_dm_2",
+    "algorithm": {
+        "name": "map-elites-double-map",
+        "num_init_sols": 1080,
+        "batch_size": 24,
+        "mutation_weights": [1, 1, 1],
+        "dr_update_gens": [0, 50, 150, 350, 750, 1550, 3150],
+        "time_no_update": 50000
+    },
+    "robot": {
+        "num_faces": 8,
+        "max_num_modules": 10,
+        "mutation_config": {
+            "p_global_mut": 0.3,
+            "p_local_mut": 0.6,
+            "weights": {
+                "global": [1, 1, 1],
+                "local": [1, 1]
+            }
+        },
+        "modules_conf": {
+            "range_freq": [0.25, 0.5],
+            "range_amp": [0.6],
+            "range_phase": [0, 1.57, 3.14, 4.71],
+            "stiff_table": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+        },
+        "robot_tests": 2,
+        "per_module_stiffness": false
+    },
+    "controller": {
+        "archive_shape": [9, 10]
+    },
+    "seeds": [9899],
+    "max_num_sims": 15000,
+    "target_dist_bearing": [
+        [45, -1.57],
+        [45, -0.78],
+        [45, 0.78],
+        [45, 1.57]
+    ],
+    "verbose": true,
+    "hof_size": 100,
+    "checkpoint_freq": 5,
+    "noise_type": 1,
+    "noise_level": 0.035,
+    "sim_time": 40
+}

@@ -1,0 +1,55 @@
+env
+build
+build_test
+build_test_integration
+conf/*.conf
+src/DoxyDocs
+
+.cproject
+
+.project
+
+# IDE folders
+.idea
+.vscode
+cmake-build-debug/
+
+**/CMakeFiles
+*Makefile
+*cmake_install.cmake
+*CMakeCache.txt
+**/Makefile
+**/cmake_install.cmake
+
+*.pyc
+*.kdev4
+src/.settings/org.eclipse.cdt.codan.core.prefs
+
+*~
+*#
+*.DS_Store
+
+*.pdfsync
+*.bbl
+*.blg
+*eps-converted-to.pdf
+
+# server results folder
+results
+ea_sim/experiments/data
+
+# executables
+simulation/build
+
+# symbolic link
+src/dev/robotSim
+
+# env_file
+env_vars
+
+# history files
+history_*
+
+/ea_sim/statistics/ranksum.txt
+
+/simulation/nn_data
