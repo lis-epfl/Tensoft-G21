@@ -1,1 +1,0 @@
-order: 1 connectedModules: 0 connectedFaces: 0 freq: 0.4 amplitude: 1 phase: 0

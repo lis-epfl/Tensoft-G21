@@ -1,4 +1,0 @@
-project(moving_ball)
-
-add_subdirectory(MovingBall_passive)
-add_subdirectory(MovingBall_active)

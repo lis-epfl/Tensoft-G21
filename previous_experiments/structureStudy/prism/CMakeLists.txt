@@ -1,4 +1,0 @@
-project(prism_analysis)
-
-add_subdirectory(jointStruct)
-add_subdirectory(MaterialAnalysis)

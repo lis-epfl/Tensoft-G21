@@ -1,3 +1,0 @@
-tgDataLogger2 started logging at time 09052018_221954, with 2 sensors on 1 senseable objects.
-time,0_SCA(low muscle).RestLen,0_SCA(low muscle).CurrLen,0_SCA(low muscle).Tension,1_SCA(high muscle).RestLen,1_SCA(high muscle).CurrLen,1_SCA(high muscle).Tension,
-0.01,2.259,3.6,715200,2.259,3.6,6034.5,
