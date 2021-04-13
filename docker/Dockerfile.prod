@@ -1,10 +1,6 @@
 # select base image
 FROM ubuntu:19.10
 
-# Dockerfile authors / maintainers
-LABEL authors='[{"name":"Anand Bhasakaran","email":"anand.bhaskaran@epfl.ch"},\
-{"name":"Daniele Bissoli","email":"daniele.bissoli@studenti.unitn.it"}]'
-
 # set timezone for the server
 ENV TZ=Europe/Rome
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
