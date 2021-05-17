@@ -6,6 +6,9 @@ ENV TZ=Europe/Rome
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # update application repository list and install required files
+# Ubuntu 19.10 is end of life and the following errors occur when building the Dockerfile:
+# E: The repository 'http://archive.ubuntu.com/ubuntu eoan Release' does not have a Release file.
+# An easy hotfix was to replace `{archive,security}.ubuntu.com` with `old-releases.ubuntu.com`
 RUN sed -i -e 's/archive.ubuntu.com/old-releases.ubuntu.com/' /etc/apt/sources.list && \
     sed -i -e 's/security.ubuntu.com/old-releases.ubuntu.com/' /etc/apt/sources.list && \
     apt-get update && apt-get install -y g++ python3 python3-pip libglib2.0-dev\
