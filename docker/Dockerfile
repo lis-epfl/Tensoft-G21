@@ -6,7 +6,9 @@ ENV TZ=Europe/Rome
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # update application repository list and install required files
-RUN apt-get update && apt-get install -y g++ python3 python3-pip libglib2.0-dev\
+RUN sed -i -e 's/archive.ubuntu.com/old-releases.ubuntu.com/' /etc/apt/sources.list && \
+    sed -i -e 's/security.ubuntu.com/old-releases.ubuntu.com/' /etc/apt/sources.list && \
+    apt-get update && apt-get install -y g++ python3 python3-pip libglib2.0-dev\
                                          curl freeglut3 freeglut3-dev cmake\
                                          build-essential unzip less nano wget\
                                          python3-tk screen python3-pydot graphviz\
