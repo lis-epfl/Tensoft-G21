@@ -29,7 +29,7 @@ RUN cd cmake_src && ./bootstrap && make -j`grep -c ^processor /proc/cpuinfo` && 
 RUN rm -r cmake_src
 
 # header only library required to run the experiments
-RUN mkdir eigen3 && wget -qO- http://bitbucket.org/eigen/eigen/get/3.3.7.tar.gz | tar -zxvf - -C eigen3 --strip 1
+RUN mkdir eigen3 && wget -qO- https://gitlab.com/libeigen/eigen/-/archive/3.3.7/eigen-3.3.7.tar.gz | tar -zxvf - -C eigen3 --strip 1
 RUN cd eigen3 && cmake -S . -B build -DOpenGL_GL_PREFERENCE=GLVND && cmake --install build
 RUN rm -r eigen3
 
